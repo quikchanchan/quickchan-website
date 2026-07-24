@@ -1,73 +1,87 @@
+npm run build
+
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const { title = "Quick Chan" } = Astro.props;
 ---
+
+<!doctype html>
+<html lang="en">
+
 <head>
 
-  <meta charset="UTF-8" />
+<meta charset="UTF-8" />
 
-  <meta 
-    name="viewport" 
-    content="width=device-width" 
-  />
+<meta 
+name="viewport" 
+content="width=device-width, initial-scale=1.0"
+/>
 
-  <title>{title}</title>
-
-
-  <meta
-    name="description"
-    content="Quick Chan is a MCIPS qualified procurement professional and founder of HYWSource, helping global businesses build reliable supply chains across Mainland China, Taiwan and Vietnam."
-  />
+<title>{title}</title>
 
 
-  <meta
-    name="author"
-    content="Quick Chan"
-  />
+<meta
+name="description"
+content="Quick Chan is a MCIPS qualified procurement professional and founder of HYWSource."
+/>
 
 
-</head><head>
-
-  <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width"
-  />
-
-  <title>{title}</title>
-
-
-  <meta
-    name="description"
-    content="Quick Chan is a MCIPS qualified procurement professional and founder of HYWSource, helping global businesses build reliable supply chains across Mainland China, Taiwan and Vietnam."
-  />
-
-
-  <meta
-    name="author"
-    content="Quick Chan"
-  />
-
-
-  <meta
-    property="og:title"
-    content="Quick Chan | Procurement & Supply Chain Professional"
-  />
-
-
-  <meta
-    property="og:description"
-    content="Helping global businesses build reliable supply chains across Mainland China, Taiwan and Vietnam."
-  />
-
-
-  <meta
-    property="og:type"
-    content="website"
-  />
+<meta
+name="author"
+content="Quick Chan"
+/>
 
 
 </head>
+
+
+<body>
+
+
+<Header />
+
+
+<main>
+
+<slot />
+
+</main>
+
+
+<Footer />
+
+
+</body>
+
+
+</html>
+
+
+<style>
+
+body {
+
+margin:0;
+font-family:
+Inter,
+Arial,
+Helvetica,
+sans-serif;
+
+color:#111;
+
+}
+
+
+main {
+
+max-width:1100px;
+margin:auto;
+padding:40px;
+
+}
+
+
+</style>
