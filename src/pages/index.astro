@@ -1,204 +1,510 @@
+```astro
 ---
-import Layout from "../layouts/Layout.astro";
+const siteUrl = "https://www.hywsource.com";
+
+const services = [
+  {
+    title: "Supplier Selection & Management",
+    text: "Identify reliable manufacturers, evaluate production capability, verify factories, and build long-term supplier relationships in China."
+  },
+  {
+    title: "Product Development Assistance",
+    text: "Support product customization, material selection, sampling, production communication, and manufacturing optimization."
+  },
+  {
+    title: "Cost Optimization",
+    text: "Improve purchasing decisions through market research, supplier comparison, negotiation, and total cost analysis."
+  },
+  {
+    title: "Quality Assurance",
+    text: "Coordinate inspections, production follow-up, quality control processes, and shipment readiness."
+  },
+  {
+    title: "Supply Chain Coordination",
+    text: "Manage communication between buyers, factories, logistics partners, and other stakeholders."
+  },
+  {
+    title: "Market Research",
+    text: "Provide China manufacturing insights, supplier intelligence, and sourcing recommendations."
+  }
+];
+
+const industries = [
+  "Home Decoration",
+  "Furniture & Building Materials",
+  "Packaging & Printing",
+  "Consumer Products",
+  "Small Appliances",
+  "Retail & E-commerce Products"
+];
+
+const process = [
+  {
+    number: "01",
+    title: "Understand Your Requirements",
+    text: "Analyze product specifications, target market, quality expectations, and commercial objectives."
+  },
+  {
+    number: "02",
+    title: "Supplier Research & Verification",
+    text: "Find suitable manufacturers and verify capability, experience, equipment, and production conditions."
+  },
+  {
+    number: "03",
+    title: "Sampling & Negotiation",
+    text: "Coordinate prototypes, improve specifications, negotiate pricing, and optimize solutions."
+  },
+  {
+    number: "04",
+    title: "Production & Delivery",
+    text: "Follow production progress, quality checkpoints, and shipment coordination until completion."
+  }
+];
+
+const insights = [
+  {
+    title: "How to Select Reliable Suppliers in China",
+    excerpt:
+      "Finding a factory is easy. Finding the right manufacturing partner requires experience, verification, and a structured sourcing process.",
+  },
+  {
+    title: "Reducing Total Cost of Ownership in Global Sourcing",
+    excerpt:
+      "The lowest unit price is not always the lowest cost. Smart sourcing considers quality, logistics, risks, and long-term value.",
+  },
+  {
+    title: "Is a China Sourcing Partner Right for Your Business?",
+    excerpt:
+      "For international brands, the right local partner can simplify communication, reduce risks, and accelerate product development."
+  }
+];
 ---
 
-<Layout
-title="Quick Chan | Procurement & Supply Chain Professional"
-description="Quick Chan is an MCIPS qualified procurement and supply chain professional helping global businesses build reliable sourcing and manufacturing networks across Asia."
->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<section class="hero">
+    <title>
+      HYWSource | China Sourcing & Procurement Partner
+    </title>
 
-<p class="eyebrow">
-Quick Chan | HYWSource
-</p>
+    <meta
+      name="description"
+      content="HYWSource helps international businesses source products from China with professional procurement, supplier management, quality control and supply chain solutions."
+    />
 
-<h1>
-Helping Global Businesses Build Better Supply Chains.
-</h1>
+    <link rel="canonical" href={siteUrl} />
+  </head>
 
-<p class="lead">
-I'm Quick Chan, an MCIPS qualified procurement professional with 15+ years of experience helping businesses source better, reduce supply chain risks and develop reliable manufacturing partners across Asia.
-</p>
+  <body class="bg-white text-gray-900">
 
-<div class="hero-buttons">
+    <header class="border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
 
-<a class="primary" href="/quickchan-website/about/">
-About Quick Chan
-</a>
+        <a href="/" class="font-semibold text-xl tracking-tight">
+          Quick Chan
+          <span class="text-gray-400">|</span>
+          HYWSource
+        </a>
 
-<a class="secondary" href="/quickchan-website/hywsource/">
-HYWSource →
-</a>
+        <nav class="hidden md:flex gap-8 text-sm text-gray-600">
+          <a href="#services" class="hover:text-black">Services</a>
+          <a href="#process" class="hover:text-black">Process</a>
+          <a href="#industries" class="hover:text-black">Industries</a>
+          <a href="#insights" class="hover:text-black">Insights</a>
+          <a href="/about" class="hover:text-black">About</a>
+        </nav>
 
-</div>
+      </div>
+    </header>
 
-</section>
 
-<section class="grid">
+    <main>
 
-<div class="card">
 
-<h2>
-Procurement
-</h2>
+      <!-- Hero -->
 
-<p>
-Strategic sourcing, supplier selection, cost optimisation and procurement management.
-</p>
+      <section class="max-w-7xl mx-auto px-6 pt-28 pb-24">
 
-<a href="/quickchan-website/experience/">
-Learn More →
-</a>
+        <div class="max-w-4xl">
 
-</div>
+          <p class="text-sm uppercase tracking-[0.3em] text-gray-500 mb-8">
+            China Sourcing · Procurement · Supply Chain
+          </p>
 
-<div class="card">
+          <h1 class="text-5xl md:text-7xl font-semibold leading-tight tracking-tight">
+            Your trusted sourcing partner
+            <br />
+            in China.
+          </h1>
 
-<h2>
-Case Studies
-</h2>
+          <p class="mt-8 text-xl text-gray-600 leading-relaxed max-w-3xl">
+            HYWSource helps global brands discover reliable manufacturers,
+            optimize costs, manage suppliers, and build stronger supply chains
+            through professional China sourcing expertise.
+          </p>
 
-<p>
-Real sourcing projects, manufacturing challenges and practical solutions.
-</p>
 
-<a href="/quickchan-website/case-studies/">
-View Cases →
-</a>
+          <div class="mt-10 flex flex-wrap gap-4">
 
-</div>
+            <a
+              href="/contact"
+              class="bg-black text-white px-8 py-4 rounded-full text-sm hover:opacity-80 transition"
+            >
+              Start Your Sourcing Project
+            </a>
 
-<div class="card">
 
-<h2>
-Insights
-</h2>
+            <a
+              href="/about"
+              class="border border-gray-300 px-8 py-4 rounded-full text-sm hover:border-black transition"
+            >
+              Learn More
+            </a>
 
-<p>
-Procurement knowledge, supply chain thinking and selected articles published on Substack.
-</p>
+          </div>
 
-<a href="/quickchan-website/insights/">
-Read Articles →
-</a>
+        </div>
 
-</div>
+      </section>
 
-<div class="card">
 
-<h2>
-Work Together
-</h2>
 
-<p>
-Need sourcing support in China, Taiwan or Vietnam? Let's discuss your project.
-</p>
 
-<a href="/quickchan-website/contact/">
-Contact →
-</a>
+      <!-- Services -->
 
-</div>
+      <section id="services" class="bg-gray-50 py-24">
 
-</section>
+        <div class="max-w-7xl mx-auto px-6">
 
-<style>
+          <div class="max-w-3xl mb-14">
 
-.hero{
-padding:110px 0 80px;
-max-width:900px;
-}
+            <p class="text-sm uppercase tracking-widest text-gray-500">
+              Services
+            </p>
 
-.eyebrow{
-letter-spacing:2px;
-text-transform:uppercase;
-font-size:13px;
-color:#777;
-}
+            <h2 class="text-4xl font-semibold mt-4">
+              Professional sourcing support from China
+            </h2>
 
-h1{
-font-size:64px;
-line-height:1.1;
-margin:18px 0 30px;
-max-width:850px;
-}
+          </div>
 
-.lead{
-font-size:22px;
-line-height:1.8;
-max-width:760px;
-color:#444;
-}
 
-.hero-buttons{
-margin-top:45px;
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
+          <div class="grid md:grid-cols-3 gap-8">
 
-.primary{
-background:#111;
-color:white;
-padding:16px 28px;
-border-radius:6px;
-text-decoration:none;
-}
+            {
+              services.map(service => (
+                <div class="bg-white p-8 rounded-2xl border border-gray-100">
 
-.secondary{
-padding:16px 28px;
-border:1px solid #111;
-border-radius:6px;
-text-decoration:none;
-color:#111;
-}
+                  <h3 class="text-xl font-medium mb-4">
+                    {service.title}
+                  </h3>
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:35px;
-margin-top:70px;
-}
+                  <p class="text-gray-600 leading-relaxed">
+                    {service.text}
+                  </p>
 
-.card{
-padding:35px;
-border:1px solid #e5e5e5;
-border-radius:12px;
-transition:.2s;
-}
+                </div>
+              ))
+            }
 
-.card:hover{
-transform:translateY(-4px);
-}
+          </div>
 
-.card h2{
-margin-top:0;
-font-size:28px;
-}
+        </div>
 
-.card p{
-line-height:1.8;
-color:#555;
-}
+      </section>
 
-.card a{
-text-decoration:none;
-font-weight:600;
-}
 
-@media(max-width:768px){
 
-h1{
-font-size:42px;
-}
 
-.lead{
-font-size:19px;
-}
 
-}
+      <!-- Why -->
 
-</style>
+      <section class="max-w-7xl mx-auto px-6 py-24">
 
-</Layout>
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+
+
+          <div>
+
+            <p class="text-sm uppercase tracking-widest text-gray-500">
+              Why HYWSource
+            </p>
+
+            <h2 class="text-4xl font-semibold mt-5 leading-tight">
+              Experience beyond supplier searching
+            </h2>
+
+          </div>
+
+
+
+          <div class="space-y-6 text-gray-600 leading-relaxed">
+
+            <p>
+              With professional procurement and supply chain experience,
+              HYWSource focuses on creating practical sourcing solutions,
+              not simply connecting buyers with factories.
+            </p>
+
+            <p>
+              We combine manufacturing knowledge, supplier evaluation,
+              commercial negotiation, and project management to help
+              international businesses reduce risks when sourcing from China.
+            </p>
+
+
+            <p>
+              From first supplier research to final shipment coordination,
+              we support every important stage of the sourcing journey.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- Process -->
+
+      <section id="process" class="bg-black text-white py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+          <div class="max-w-3xl mb-16">
+
+            <p class="text-sm uppercase tracking-widest text-gray-400">
+              Our Process
+            </p>
+
+            <h2 class="text-4xl font-semibold mt-4">
+              A structured approach to sourcing
+            </h2>
+
+          </div>
+
+
+
+          <div class="grid md:grid-cols-4 gap-8">
+
+            {
+              process.map(item => (
+
+                <div>
+
+                  <div class="text-gray-400 text-sm mb-5">
+                    {item.number}
+                  </div>
+
+                  <h3 class="text-xl font-medium mb-4">
+                    {item.title}
+                  </h3>
+
+                  <p class="text-gray-400 leading-relaxed">
+                    {item.text}
+                  </p>
+
+                </div>
+
+              ))
+            }
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- Industries -->
+
+      <section id="industries" class="max-w-7xl mx-auto px-6 py-24">
+
+
+        <p class="text-sm uppercase tracking-widest text-gray-500">
+          Industries
+        </p>
+
+
+        <h2 class="text-4xl font-semibold mt-5 mb-12">
+          Products we support
+        </h2>
+
+
+        <div class="grid md:grid-cols-3 gap-5">
+
+          {
+            industries.map(industry => (
+
+              <div class="border border-gray-200 rounded-xl px-6 py-8 text-lg">
+                {industry}
+              </div>
+
+            ))
+          }
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+      <!-- Insights -->
+
+      <section id="insights" class="bg-gray-50 py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+
+          <div class="flex justify-between items-end mb-12">
+
+
+            <div>
+
+              <p class="text-sm uppercase tracking-widest text-gray-500">
+                Insights
+              </p>
+
+              <h2 class="text-4xl font-semibold mt-4">
+                From Quick Chan Journal
+              </h2>
+
+            </div>
+
+
+          </div>
+
+
+
+          <div class="grid md:grid-cols-3 gap-8">
+
+            {
+              insights.map(post => (
+
+                <article class="bg-white rounded-2xl p-8 border border-gray-100">
+
+                  <h3 class="text-xl font-medium mb-4">
+                    {post.title}
+                  </h3>
+
+                  <p class="text-gray-600 leading-relaxed mb-6">
+                    {post.excerpt}
+                  </p>
+
+
+                  <a
+                    href="https://quickchan.substack.com"
+                    target="_blank"
+                    class="text-sm underline underline-offset-4"
+                  >
+                    Read on Substack
+                  </a>
+
+
+                </article>
+
+              ))
+            }
+
+
+          </div>
+
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!-- CTA -->
+
+      <section class="max-w-7xl mx-auto px-6 py-28">
+
+
+        <div class="bg-gray-900 text-white rounded-3xl p-12 md:p-20">
+
+
+          <h2 class="text-4xl md:text-5xl font-semibold max-w-3xl">
+            Looking for reliable sourcing support in China?
+          </h2>
+
+
+          <p class="mt-6 text-gray-300 text-lg max-w-2xl">
+            Let's discuss your product requirements and explore how HYWSource
+            can support your supply chain.
+          </p>
+
+
+          <a
+            href="/contact"
+            class="inline-block mt-10 bg-white text-black px-8 py-4 rounded-full"
+          >
+            Contact HYWSource
+          </a>
+
+
+        </div>
+
+
+      </section>
+
+
+    </main>
+
+
+
+
+
+    <footer class="border-t border-gray-100">
+
+      <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between gap-6">
+
+
+        <div>
+
+          <div class="font-semibold">
+            Quick Chan | HYWSource
+          </div>
+
+          <p class="text-sm text-gray-500 mt-2">
+            China sourcing and procurement solutions.
+          </p>
+
+        </div>
+
+
+        <div class="text-sm text-gray-500">
+
+          © {new Date().getFullYear()} HYWSource.
+          <br />
+          www.hywsource.com
+
+        </div>
+
+
+      </div>
+
+
+    </footer>
+
+
+  </body>
+</html>
+```
