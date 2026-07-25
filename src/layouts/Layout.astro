@@ -1,87 +1,126 @@
-npm run build
-
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { title = "Quick Chan" } = Astro.props;
+const {
+title="Quick Chan | Procurement & Supply Chain Professional",
+description="Quick Chan is an MCIPS qualified procurement professional helping businesses build reliable supply chains across Asia.",
+image="https://www.hywsource.com/og-image.jpg"
+}=Astro.props;
 ---
 
 <!doctype html>
+
 <html lang="en">
 
 <head>
 
-<meta charset="UTF-8" />
+<meta charset="UTF-8">
 
-<meta 
-name="viewport" 
-content="width=device-width, initial-scale=1.0"
-/>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1">
 
 <title>{title}</title>
 
-
 <meta
 name="description"
-content="Quick Chan is a MCIPS qualified procurement professional and founder of HYWSource."
-/>
-
+content={description}>
 
 <meta
 name="author"
-content="Quick Chan"
-/>
+content="Quick Chan">
 
+<meta
+property="og:title"
+content={title}>
+
+<meta
+property="og:description"
+content={description}>
+
+<meta
+property="og:type"
+content="website">
+
+<meta
+property="og:url"
+content="https://www.hywsource.com">
+
+<meta
+property="og:image"
+content={image}>
+
+<meta
+name="twitter:card"
+content="summary_large_image">
+
+<meta
+name="twitter:title"
+content={title}>
+
+<meta
+name="twitter:description"
+content={description}>
+
+<meta
+name="twitter:image"
+content={image}>
+
+<link
+rel="canonical"
+href="https://www.hywsource.com">
 
 </head>
 
-
 <body>
 
-
-<Header />
-
+<Header/>
 
 <main>
 
-<slot />
+<slot/>
 
 </main>
 
-
-<Footer />
-
+<Footer/>
 
 </body>
 
-
 </html>
-
 
 <style>
 
-body {
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
 
 margin:0;
+
 font-family:
 Inter,
+system-ui,
 Arial,
-Helvetica,
 sans-serif;
 
 color:#111;
 
+background:white;
+
 }
 
+main{
 
-main {
+max-width:1150px;
 
-max-width:1100px;
 margin:auto;
-padding:40px;
+
+padding:0 35px;
 
 }
-
 
 </style>

@@ -2,296 +2,203 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Quick Chan | Procurement & Supply Chain Professional">
-
+<Layout
+title="Quick Chan | Procurement & Supply Chain Professional"
+description="Quick Chan is an MCIPS qualified procurement and supply chain professional helping global businesses build reliable sourcing and manufacturing networks across Asia."
+>
 
 <section class="hero">
 
-<p class="label">
-Founder of HYWSource | MCIPS Qualified Procurement Professional
+<p class="eyebrow">
+Quick Chan | HYWSource
 </p>
-
 
 <h1>
-Quick Chan
+Helping Global Businesses Build Better Supply Chains.
 </h1>
 
-
-<h2>
-Helping global businesses build reliable supply chains across Asia.
-</h2>
-
-
-<p>
-I help international businesses identify suitable manufacturers,
-develop sourcing strategies and build resilient supply chains across
-Mainland China, Taiwan and Vietnam.
+<p class="lead">
+I'm Quick Chan, an MCIPS qualified procurement professional with 15+ years of experience helping businesses source better, reduce supply chain risks and develop reliable manufacturing partners across Asia.
 </p>
 
+<div class="hero-buttons">
 
-<div class="buttons">
-
-<a href="/quickchan-website/hywsource/">
-Explore HYWSource
+<a class="primary" href="/quickchan-website/about/">
+About Quick Chan
 </a>
 
-
-<a href="/quickchan-website/case-studies/">
-View Case Studies
+<a class="secondary" href="/quickchan-website/hywsource/">
+HYWSource →
 </a>
 
 </div>
 
-
 </section>
 
+<section class="grid">
 
-
-<section>
+<div class="card">
 
 <h2>
-About Quick Chan
+Procurement
 </h2>
 
-
 <p>
-With 15+ years of experience in international trade, procurement and
-supply chain management, I support businesses in connecting market needs
-with practical manufacturing solutions.
+Strategic sourcing, supplier selection, cost optimisation and procurement management.
 </p>
 
-
-<a href="/quickchan-website/about/">
+<a href="/quickchan-website/experience/">
 Learn More →
 </a>
 
+</div>
 
-</section>
-
-
-
-
-<section>
+<div class="card">
 
 <h2>
-What I Do
+Case Studies
 </h2>
-
-
-<ul>
-
-<li>
-Supplier identification and qualification
-</li>
-
-<li>
-Product development and manufacturing support
-</li>
-
-<li>
-Strategic sourcing and supply chain optimization
-</li>
-
-<li>
-Supplier communication and risk management
-</li>
-
-</ul>
-
-
-<a href="/quickchan-website/hywsource/">
-Explore Services →
-</a>
-
-
-</section>
-
-
-
-
-<section>
-
-<h2>
-Sourcing Experience Across Asia
-</h2>
-
 
 <p>
-My sourcing experience covers key manufacturing regions including:
+Real sourcing projects, manufacturing challenges and practical solutions.
 </p>
-
-
-<ul>
-
-<li>
-Mainland China — Manufacturing development and supplier network
-</li>
-
-<li>
-Taiwan — Specialized suppliers and manufacturing capabilities
-</li>
-
-<li>
-Vietnam — Alternative sourcing and supply chain diversification
-</li>
-
-</ul>
-
-
-</section>
-
-
-
-
-<section>
-
-<h2>
-Selected Case Studies
-</h2>
-
-
-<p>
-Explore examples of sourcing projects, supply chain challenges
-and problem-solving approaches.
-</p>
-
 
 <a href="/quickchan-website/case-studies/">
-View Case Studies →
+View Cases →
 </a>
 
+</div>
 
-</section>
-
-
-
-
-<section>
+<div class="card">
 
 <h2>
 Insights
 </h2>
 
-
 <p>
-Articles and reflections on procurement, supply chains,
-manufacturing and business perspectives.
+Procurement knowledge, supply chain thinking and selected articles published on Substack.
 </p>
-
 
 <a href="/quickchan-website/insights/">
-Read Insights →
+Read Articles →
 </a>
 
+</div>
 
-</section>
-
-
-
-
-<section>
+<div class="card">
 
 <h2>
-Work With Me
+Work Together
 </h2>
 
-
 <p>
-If you are looking for sourcing support, manufacturing solutions
-or supply chain consulting across Asia, let's discuss your project.
+Need sourcing support in China, Taiwan or Vietnam? Let's discuss your project.
 </p>
 
-
 <a href="/quickchan-website/contact/">
-Get In Touch →
+Contact →
 </a>
 
+</div>
 
 </section>
-
-
 
 <style>
 
-section {
-
+.hero{
+padding:110px 0 80px;
 max-width:900px;
-padding:60px 0;
-
 }
 
-
-.hero {
-
-padding:100px 0;
-
+.eyebrow{
+letter-spacing:2px;
+text-transform:uppercase;
+font-size:13px;
+color:#777;
 }
 
-
-.label {
-
-color:#666;
-
-}
-
-
-h1 {
-
+h1{
 font-size:64px;
-margin:20px 0;
-
+line-height:1.1;
+margin:18px 0 30px;
+max-width:850px;
 }
 
-
-h2 {
-
-font-size:32px;
-font-weight:400;
-margin-top:50px;
-
-}
-
-
-p {
-
-font-size:20px;
+.lead{
+font-size:22px;
 line-height:1.8;
-max-width:750px;
-
+max-width:760px;
+color:#444;
 }
 
+.hero-buttons{
+margin-top:45px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
 
-li {
+.primary{
+background:#111;
+color:white;
+padding:16px 28px;
+border-radius:6px;
+text-decoration:none;
+}
 
-font-size:18px;
+.secondary{
+padding:16px 28px;
+border:1px solid #111;
+border-radius:6px;
+text-decoration:none;
+color:#111;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:35px;
+margin-top:70px;
+}
+
+.card{
+padding:35px;
+border:1px solid #e5e5e5;
+border-radius:12px;
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card h2{
+margin-top:0;
+font-size:28px;
+}
+
+.card p{
 line-height:1.8;
-margin:10px 0;
-
+color:#555;
 }
 
-
-.buttons a {
-
-display:inline-block;
-margin-right:30px;
-margin-top:30px;
-color:#111;
+.card a{
 text-decoration:none;
-border-bottom:1px solid #111;
-
+font-weight:600;
 }
 
+@media(max-width:768px){
 
-a {
-
-color:#111;
-text-decoration:none;
-border-bottom:1px solid #111;
-
+h1{
+font-size:42px;
 }
 
+.lead{
+font-size:19px;
+}
+
+}
 
 </style>
-
 
 </Layout>
