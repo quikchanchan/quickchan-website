@@ -2,31 +2,119 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Procurement Knowledge Hub | Quick Chan">
-
+<Layout 
+title="Procurement & Supply Chain Insights | HYWSource"
+description="Practical procurement and supply chain insights covering supplier evaluation, quality management, manufacturing processes and purchasing strategies."
+>
 <main>
 
 <h1>
-Procurement Knowledge Hub
+Procurement & Supply Chain Insights
 </h1>
 
 <p class="intro">
-A collection of practical procurement knowledge, tools and methodologies
-built from real sourcing and supply chain projects.
-Rather than focusing on industry news, these articles share frameworks
-that help businesses improve supplier management, manufacturing quality,
-cost control and project execution.
+Practical insights on procurement, supplier management,
+manufacturing and supply chain optimisation based on
+real-world purchasing experience and international sourcing projects.
 </p>
 
+<section class="featured">
 
+<h2>Featured Insights</h2>
+
+<div class="featured-grid">
+
+<div class="article">
+
+<span class="tag">
+Supplier Management
+</span>
+
+<h3>
+<a href="https://quickchan.substack.com/p/tools-for-effective-procurement-and" target="_blank">
+How to Evaluate and Select Reliable Suppliers
+</a>
+</h3>
+
+<p>
+A practical supplier evaluation framework covering
+qualification, assessment and procurement decision making.
+</p>
+
+<a 
+class="read-more"
+href="https://quickchan.substack.com/p/tools-for-effective-procurement-and" 
+target="_blank">
+Read Article →
+</a>
+
+</div>
+
+
+<div class="article">
+
+<span class="tag">
+Quality Management
+</span>
+
+<h3>
+<a href="https://quickchan.substack.com/p/quality-management" target="_blank">
+Supplier Quality Management: How Buyers Can Control Manufacturing Quality
+</a>
+</h3>
+
+<p>
+How procurement teams manage quality risks through inspection,
+corrective actions and supplier improvement processes.
+</p>
+
+<a 
+class="read-more"
+href="https://quickchan.substack.com/p/quality-management" 
+target="_blank">
+Read Article →
+</a>
+
+</div>
+
+
+<div class="article">
+
+<span class="tag">
+Procurement Strategy
+</span>
+
+<h3>
+<a href="https://quickchan.substack.com/p/the-visible-and-hidden-costs-in-procurement" target="_blank">
+The Hidden Costs in Procurement: Why Lowest Price Is Not Always Lowest Cost
+</a>
+</h3>
+
+<p>
+Understanding total cost of ownership beyond the initial purchase price.
+</p>
+
+<a 
+class="read-more"
+href="https://quickchan.substack.com/p/the-visible-and-hidden-costs-in-procurement" 
+target="_blank">
+Read Article →
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 <section>
 
 <h2>Procurement Strategy</h2>
 
 <div class="article">
-<h3>The Hidden Costs of Procurement</h3>
-
+<h3>
+The Hidden Costs in Procurement: Understanding Total Cost of Ownership
+</h3>
 <p>
 Why purchase price is only the visible part of procurement cost,
 and how hidden risks influence total cost of ownership.
@@ -49,8 +137,10 @@ Read on Substack →
 
 <div class="article">
 
-<h3>Supplier Evaluation Checklist</h3>
-
+<h3>
+How to Evaluate and Select Reliable Suppliers:
+A Procurement Framework
+</h3>
 <p>
 A practical framework for supplier qualification,
 factory assessment and procurement decision making.
@@ -65,8 +155,9 @@ Read on Substack →
 
 <div class="article">
 
-<h3>Contract Templates</h3>
-
+<h3>
+Supplier Agreements and Contract Templates for Procurement Risk Management
+</h3>
 <p>
 Supplier agreements, confidentiality agreements
 and tooling agreements for reducing sourcing risks.
@@ -85,12 +176,13 @@ Read on Substack →
 
 <section>
 
-<h2>Manufacturing Excellence</h2>
+<h2>Quality & Manufacturing</h2>
 
 <div class="article">
 
-<h3>Production Part Approval Process (PPAP)</h3>
-
+<h3>
+Production Part Approval Process (PPAP): Ensuring Consistent Manufacturing Quality
+</h3>
 <p>
 Ensuring consistent manufacturing quality through standardized
 approval and validation processes.
@@ -106,8 +198,9 @@ Read on Substack →
 
 <div class="article">
 
-<h3>Quality Management</h3>
-
+<h3>
+Supplier Quality Management: How Buyers Control Manufacturing Quality
+</h3>
 <p>
 Material inspection, corrective action plans and AQL sampling
 to strengthen supplier quality management.
@@ -123,8 +216,9 @@ Read on Substack →
 
 <div class="article">
 
-<h3>Capacity Analysis Report</h3>
-
+<h3>
+Supplier Capacity Analysis: How Buyers Verify Manufacturing Capability
+</h3>
 <p>
 Evaluating supplier production capacity,
 manufacturing bottlenecks and delivery capability.
@@ -143,12 +237,13 @@ Read on Substack →
 
 <section>
 
-<h2>Project Management</h2>
+<h2>Procurement Tools</h2>
 
 <div class="article">
 
-<h3>Project Management Template</h3>
-
+<h3>
+Procurement Project Management Templates for Supply Chain Execution
+</h3>
 <p>
 Planning, scheduling, risk management and project tracking
 for procurement and supply chain projects.
@@ -167,12 +262,12 @@ Read on Substack →
 
 <section class="note">
 
-<h2>More on Substack</h2>
+<h2>Beyond Procurement Insights</h2>
 
 <p>
-Besides procurement knowledge, I also write about books,
-travel and personal reflections. These experiences shape
-how I approach business, learning and life.
+Beyond procurement and supply chain topics, I also share
+reflections on learning, reading and experiences that shape
+my perspective on business and continuous improvement.
 </p>
 
 <a href="https://quickchan.substack.com" target="_blank">
@@ -189,6 +284,7 @@ main{
 max-width:900px;
 margin:0 auto;
 padding:80px 30px;
+background:#fafafa;
 }
 
 h1{
@@ -209,9 +305,25 @@ margin-bottom:25px;
 }
 
 .article{
-margin-bottom:40px;
-padding-bottom:30px;
-border-bottom:1px solid #eee;
+background:#ffffff;
+padding:30px;
+border-radius:14px;
+border:1px solid #e8e8e8;
+margin-bottom:24px;
+transition:all 0.3s ease;
+}
+.tag{
+display:inline-block;
+font-size:13px;
+font-weight:600;
+letter-spacing:0.08em;
+text-transform:uppercase;
+color:#666;
+margin-bottom:14px;
+}
+.article:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
 }
 
 h3{
@@ -231,6 +343,19 @@ text-decoration:none;
 font-weight:600;
 color:#111;
 }
+.read-more{
+margin-top:20px;
+font-size:15px;
+font-weight:600;
+letter-spacing:0.03em;
+color:#111;
+transition:transform 0.2s ease;
+}
+
+
+.read-more:hover{
+transform:translateX(5px);
+}
 
 a:hover{
 text-decoration:underline;
@@ -240,6 +365,23 @@ text-decoration:underline;
 margin-top:90px;
 padding-top:40px;
 border-top:2px solid #ddd;
+}
+
+
+.featured-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:24px;
+margin-top:30px;
+}
+
+
+@media(max-width:768px){
+
+.featured-grid{
+grid-template-columns:1fr;
+}
+
 }
 
 </style>
