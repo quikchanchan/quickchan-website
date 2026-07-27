@@ -2,109 +2,191 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Case Studies | Quick Chan">
+<Layout title="Procurement & Supply Chain Case Studies | Quick Chan">
 
 
 <main>
 
 
+<section class="hero">
+
 <h1>
-Case Studies
+Procurement & Supply Chain Case Studies
 </h1>
 
 
 <h2>
-Real-World Sourcing & Supply Chain Solutions Across Asia
+Real sourcing projects, manufacturing challenges and practical solutions across Asia.
 </h2>
 
 
-<p class="intro">
-Selected examples of sourcing, supplier development and supply chain projects
-supporting international businesses across Mainland China, Taiwan and Vietnam.
-Client identities and commercial details are protected, while focusing on
-methodology, problem solving and professional capability.
+<p>
+These case studies demonstrate how Quick Chan supports international businesses
+through supplier evaluation, manufacturing coordination, product development and
+supply chain risk management across Mainland China, Taiwan and Vietnam.
 </p>
 
+</section>
 
 
-<section class="cases">
 
 
-<div class="case">
+<section>
+
+
+<h2>
+Featured Projects
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
 
 <h3>
-Vietnam Sourcing & China+1 Strategy
+Vietnam Sourcing & China+1 Supply Chain Strategy
 </h3>
 
+
 <p>
-Helping businesses evaluate Vietnam manufacturing opportunities through supplier
-research, factory assessment and China+1 sourcing strategy development.
+Evaluating alternative manufacturing opportunities through supplier research,
+factory assessment and manufacturing capability analysis in Vietnam.
 </p>
+
 
 <a href="/case-study-vietnam-sourcing">
 View Case Study →
 </a>
 
+
 </div>
 
 
 
-<div class="case">
+
+<div class="card">
+
 
 <h3>
-Supplier Development & Factory Qualification
+Supplier Development & Product Development
 </h3>
 
+
 <p>
-Supporting international businesses in identifying, evaluating and developing
-manufacturing partners based on product requirements, quality expectations and
-production capabilities.
+Building reliable manufacturing partnerships through supplier qualification,
+product development support and production evaluation.
 </p>
+
 
 <a href="/case-study-supplier-development">
 View Case Study →
 </a>
 
+
 </div>
 
 
 
-<div class="case">
+
+
+<div class="card">
+
 
 <h3>
-Supply Chain Risk Management & Operational Resilience
+Supply Chain Risk Management
 </h3>
 
+
 <p>
-Managing supply chain challenges through supplier coordination, risk assessment
-and practical solutions to maintain production continuity during disruption.
+Helping businesses improve supply chain resilience through proactive supplier
+management, risk identification and procurement strategy.
 </p>
+
 
 <a href="/case-study-supply-chain-risk-management">
 View Case Study →
 </a>
 
+
 </div>
 
+
+
+</div>
 
 
 </section>
 
 
 
-<section>
+
+
+<section class="approach">
+
 
 <h2>
-Confidentiality
+My Procurement Approach
 </h2>
 
 
 <p>
-Client relationships, supplier networks and commercial information are treated
-as confidential. Public case studies focus on sourcing methodology,
-decision-making process and problem-solving approach while protecting
-confidential business information.
+Successful sourcing is not only about finding suppliers. It requires understanding
+manufacturing capabilities, evaluating risks and creating long-term partnerships
+between global businesses and reliable manufacturing partners.
 </p>
+
+
+<ul>
+
+<li>
+Supplier research and qualification
+</li>
+
+<li>
+Factory capability evaluation
+</li>
+
+<li>
+Product development and production support
+</li>
+
+<li>
+Cost optimisation and negotiation
+</li>
+
+<li>
+Supply chain risk management
+</li>
+
+</ul>
+
+
+</section>
+
+
+
+
+<section class="cta">
+
+
+<h2>
+Looking for sourcing support across Asia?
+</h2>
+
+
+<p>
+Let's discuss how Quick Chan can support your procurement and supply chain
+requirements across Mainland China, Taiwan and Vietnam.
+</p>
+
+
+<a href="/contact">
+Contact Quick Chan →
+</a>
 
 
 </section>
@@ -115,55 +197,119 @@ confidential business information.
 
 
 
+
 <style>
 
+
 main {
-max-width:900px;
-margin:0 auto;
+
+max-width:1000px;
+margin:auto;
 padding:80px 30px;
+
 }
 
 
+
 h1 {
-font-size:48px;
+
+font-size:50px;
+
 }
 
 
 h2 {
-font-size:28px;
-margin-top:50px;
-}
 
+font-size:32px;
+margin-top:60px;
 
-.intro {
-font-size:18px;
-line-height:1.8;
-}
-
-
-.case {
-margin:45px 0;
-padding-bottom:30px;
 }
 
 
 h3 {
+
 font-size:24px;
+
 }
+
 
 
 p {
+
 font-size:18px;
 line-height:1.8;
+
 }
 
 
-a {
-color:#111;
-text-decoration:underline;
+
+.cards {
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+
 }
+
+
+
+.card {
+
+border:1px solid #ddd;
+padding:30px;
+border-radius:10px;
+
+}
+
+
+
+.card a {
+
+font-weight:bold;
+
+}
+
+
+
+li {
+
+margin:15px 0;
+font-size:18px;
+
+}
+
+
+
+.cta {
+
+margin-top:80px;
+padding:50px;
+background:#111;
+color:white;
+
+}
+
+
+
+.cta a {
+
+color:white;
+font-weight:bold;
+
+}
+
+
+
+@media(max-width:800px){
+
+.cards {
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 
 </style>
-
-
-</Layout>
