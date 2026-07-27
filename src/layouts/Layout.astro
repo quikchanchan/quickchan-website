@@ -5,9 +5,10 @@ import "../styles/global.css";
 
 const {
   title = "Quick Chan | Procurement & Supply Chain Professional",
-  description = "Quick Chan is an MCIPS qualified procurement professional helping global businesses build reliable supply chains across Mainland China, Taiwan and Vietnam.",
+  description = "Quick Chan is an MCIPS qualified procurement and supply chain professional specialising in supplier development, product sourcing and supply chain solutions across Mainland China, Taiwan and Vietnam.",
   image = "https://www.hywsource.com/og-image.jpg"
 } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -46,7 +47,7 @@ content="website">
 
 <meta
 property="og:url"
-content="https://www.hywsource.com">
+content={canonicalURL}>
 
 <meta
 property="og:image"
@@ -70,7 +71,7 @@ content={image}>
 
 <link
 rel="canonical"
-href="https://www.hywsource.com">
+href={canonicalURL}>
 
 </head>
 
