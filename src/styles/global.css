@@ -1,8 +1,11 @@
 /* ===================================
    HYWSource Global Style
    Desktop + Mobile Responsive
+   Android Text Scaling Fix
    =================================== */
 
+
+/* Base */
 
 html {
 
@@ -31,11 +34,11 @@ body {
 
   line-height:1.6;
 
+  overflow-x:hidden;
+
   -webkit-text-size-adjust:100%;
 
   text-size-adjust:100%;
-
-  overflow-x:hidden;
 
 }
 
@@ -443,7 +446,8 @@ li {
 
 
 /* ===============================
-   Mobile Android + iPhone
+   Mobile
+   Android + iPhone
    =============================== */
 
 
@@ -454,12 +458,20 @@ html {
 
   font-size:16px;
 
+  -webkit-text-size-adjust:none;
+
+  text-size-adjust:none;
+
 }
 
 
 body {
 
   overflow-x:hidden;
+
+  -webkit-text-size-adjust:none;
+
+  text-size-adjust:none;
 
 }
 
@@ -475,10 +487,13 @@ body {
 
 
 
+/* Headings */
+
+
 h1,
 .hero h1 {
 
-  font-size:36px !important;
+  font-size:34px !important;
 
   line-height:1.25;
 
@@ -490,7 +505,7 @@ h1,
 
 h2 {
 
-  font-size:26px !important;
+  font-size:25px !important;
 
   line-height:1.4;
 
@@ -506,6 +521,9 @@ h3 {
 
 
 
+/* Text */
+
+
 p,
 li {
 
@@ -517,12 +535,14 @@ li {
 
 
 
+/* Hero */
+
+
 .hero {
 
   padding:55px 0 45px;
 
 }
-
 
 
 .hero-text {
@@ -533,12 +553,18 @@ li {
 
 
 
+/* Sections */
+
+
 .section {
 
   padding:45px 0;
 
 }
 
+
+
+/* Cards */
 
 
 .card,
@@ -556,10 +582,15 @@ li {
 .card-grid,
 .cards {
 
+  grid-template-columns:1fr;
+
   gap:20px;
 
 }
 
+
+
+/* Tags */
 
 
 .location-list span,
@@ -573,4 +604,40 @@ li {
 
 
 
+/* Android Chrome font autosize prevention */
+
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a {
+
+  max-height:999999px;
+
 }
+
+
+}
+
+
+
+/* ===============================
+   Extra Android Chrome Fix
+   =============================== */
+
+
+@media screen and (max-width:600px) {
+
+
+body {
+
+  min-width:0;
+
+}
+
+
+}
+
