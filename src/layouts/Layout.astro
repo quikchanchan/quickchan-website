@@ -8,6 +8,7 @@ const {
   description = "Quick Chan is an MCIPS qualified procurement and supply chain professional specialising in supplier development, product sourcing and supply chain solutions across Mainland China, Taiwan and Vietnam.",
   image = "https://www.hywsource.com/og-image.jpg"
 } = Astro.props;
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
@@ -18,96 +19,115 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <head>
 
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
 <link rel="alternate icon" href="/favicon.ico">
 
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1">
 
 <title>{title}</title>
 
+
 <meta
 name="description"
-content={description}>
+content={description}
+/>
+
 
 <meta
 name="author"
-content="Quick Chan">
+content="Quick Chan"
+/>
+
 
 <meta
 property="og:title"
-content={title}>
+content={title}
+/>
+
 
 <meta
 property="og:description"
-content={description}>
+content={description}
+/>
+
 
 <meta
 property="og:type"
-content="website">
+content="website"
+/>
+
 
 <meta
 property="og:url"
-content={canonicalURL}>
+content={canonicalURL}
+/>
+
 
 <meta
 property="og:image"
-content={image}>
+content={image}
+/>
+
 
 <meta
 name="twitter:card"
-content="summary_large_image">
+content="summary_large_image"
+/>
 
-<meta
-name="twitter:title"
-content={title}>
-
-<meta
-name="twitter:description"
-content={description}>
-
-<meta
-name="twitter:image"
-content={image}>
 
 <link
 rel="canonical"
-href={canonicalURL}>
+href={canonicalURL}
+/>
+
 
 </head>
 
+
 <body>
 
-<Header/>
+
+<Header />
+
 
 <main>
 
-<slot/>
+<slot />
 
 </main>
 
-<Footer/>
+
+<Footer />
+
 
 </body>
 
+
 </html>
+
+
 
 <style>
 
-html{
+
+html {
 
 scroll-behavior:smooth;
 
 }
 
-body{
+
+
+body {
 
 margin:0;
 
 font-family:
 Inter,
-system-ui,
+"Helvetica Neue",
 Arial,
 sans-serif;
 
@@ -115,9 +135,21 @@ color:#111;
 
 background:white;
 
+line-height:1.6;
+
 }
 
-main{
+
+
+* {
+
+box-sizing:border-box;
+
+}
+
+
+
+main {
 
 max-width:1150px;
 
@@ -126,5 +158,114 @@ margin:auto;
 padding:0 35px;
 
 }
+
+
+
+h1,
+h2,
+h3,
+h4 {
+
+font-weight:600;
+
+line-height:1.25;
+
+}
+
+
+
+p {
+
+line-height:1.8;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+body {
+
+overflow-x:hidden;
+
+}
+
+
+
+main {
+
+padding:0 18px;
+
+}
+
+
+
+h1 {
+
+font-size:34px !important;
+
+line-height:1.25;
+
+}
+
+
+
+h2 {
+
+font-size:26px !important;
+
+line-height:1.35;
+
+}
+
+
+
+h3 {
+
+font-size:20px !important;
+
+}
+
+
+
+p {
+
+font-size:16px !important;
+
+line-height:1.7;
+
+}
+
+
+
+section {
+
+padding-left:0 !important;
+
+padding-right:0 !important;
+
+}
+
+
+
+.card {
+
+padding:22px !important;
+
+}
+
+
+
+.hero {
+
+padding-top:50px !important;
+
+}
+
+
+
+}
+
 
 </style>
