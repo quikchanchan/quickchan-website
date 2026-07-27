@@ -1,10 +1,17 @@
 /* ===================================
    HYWSource Global Style
+   Desktop + Mobile Responsive
    =================================== */
 
 
 html {
-  scroll-behavior: smooth;
+
+  scroll-behavior:smooth;
+
+  -webkit-text-size-adjust:100%;
+
+  text-size-adjust:100%;
+
 }
 
 
@@ -23,6 +30,12 @@ body {
   background:#fff;
 
   line-height:1.6;
+
+  -webkit-text-size-adjust:100%;
+
+  text-size-adjust:100%;
+
+  overflow-x:hidden;
 
 }
 
@@ -52,9 +65,9 @@ img {
 }
 
 
-/* ===================================
+/* ===============================
    Layout
-   =================================== */
+   =============================== */
 
 
 main {
@@ -83,9 +96,9 @@ section {
 
 
 
-/* ===================================
+/* ===============================
    Typography
-   =================================== */
+   =============================== */
 
 
 h1,
@@ -95,9 +108,9 @@ h4 {
 
   margin:0;
 
-  line-height:1.25;
-
   font-weight:600;
+
+  line-height:1.25;
 
 }
 
@@ -125,6 +138,8 @@ h3 {
 
 p {
 
+  margin:0;
+
   font-size:18px;
 
   line-height:1.8;
@@ -132,10 +147,19 @@ p {
 }
 
 
+li {
 
-/* ===================================
+  font-size:18px;
+
+  line-height:1.7;
+
+}
+
+
+
+/* ===============================
    Buttons
-   =================================== */
+   =============================== */
 
 
 .btn {
@@ -148,16 +172,7 @@ p {
 
   background:#111;
 
-  color:white;
-
-  transition:.3s;
-
-}
-
-
-.btn:hover {
-
-  opacity:.8;
+  color:#fff;
 
 }
 
@@ -168,21 +183,21 @@ p {
 
   margin-top:35px;
 
-  background:white;
-
-  color:#111;
-
   padding:15px 32px;
 
   border-radius:999px;
+
+  background:#fff;
+
+  color:#111;
 
 }
 
 
 
-/* ===================================
+/* ===============================
    Hero
-   =================================== */
+   =============================== */
 
 
 .hero {
@@ -194,9 +209,9 @@ p {
 
 .hero h1 {
 
-  font-size:clamp(42px,5vw,64px);
-
   max-width:950px;
+
+  font-size:clamp(42px,5vw,64px);
 
   letter-spacing:-1px;
 
@@ -207,19 +222,19 @@ p {
 
   margin-top:30px;
 
+  max-width:750px;
+
   font-size:20px;
 
   color:#555;
-
-  max-width:750px;
 
 }
 
 
 
-/* ===================================
+/* ===============================
    Sections
-   =================================== */
+   =============================== */
 
 
 .section {
@@ -239,9 +254,9 @@ p {
 
 
 
-/* ===================================
+/* ===============================
    Cards
-   =================================== */
+   =============================== */
 
 
 .card-grid,
@@ -267,7 +282,7 @@ p {
 
   border-radius:16px;
 
-  background:white;
+  background:#fff;
 
 }
 
@@ -280,7 +295,6 @@ p {
 }
 
 
-
 .card p {
 
   color:#555;
@@ -289,9 +303,9 @@ p {
 
 
 
-/* ===================================
+/* ===============================
    Process
-   =================================== */
+   =============================== */
 
 
 .process,
@@ -317,19 +331,10 @@ p {
 }
 
 
-.process-item span {
 
-  font-size:14px;
-
-  color:#777;
-
-}
-
-
-
-/* ===================================
-   Lists / Tags
-   =================================== */
+/* ===============================
+   Tags
+   =============================== */
 
 
 .location-list,
@@ -359,9 +364,9 @@ p {
 
 
 
-/* ===================================
-   Dark CTA
-   =================================== */
+/* ===============================
+   CTA
+   =============================== */
 
 
 .dark-section,
@@ -371,21 +376,19 @@ p {
 
   color:white;
 
-  border-radius:24px;
-
   padding:70px;
 
-}
+  border-radius:24px;
 
+}
 
 
 .dark-section h2,
 .cta h2 {
 
-  color:white;
+  color:#fff;
 
 }
-
 
 
 .dark-section p,
@@ -397,9 +400,9 @@ p {
 
 
 
-/* ===================================
+/* ===============================
    Tablet
-   =================================== */
+   =============================== */
 
 
 @media(max-width:900px){
@@ -435,25 +438,51 @@ p {
 }
 
 
-
 }
 
 
 
-
-/* ===================================
-   Mobile
-   =================================== */
+/* ===============================
+   Mobile Android + iPhone
+   =============================== */
 
 
 @media(max-width:600px){
 
 
-h1 {
+html {
 
-  font-size:34px;
+  font-size:16px;
+
+}
+
+
+body {
+
+  overflow-x:hidden;
+
+}
+
+
+
+.container {
+
+  padding-left:20px;
+
+  padding-right:20px;
+
+}
+
+
+
+h1,
+.hero h1 {
+
+  font-size:36px !important;
 
   line-height:1.25;
+
+  letter-spacing:-0.5px;
 
 }
 
@@ -461,7 +490,7 @@ h1 {
 
 h2 {
 
-  font-size:25px;
+  font-size:26px !important;
 
   line-height:1.4;
 
@@ -471,15 +500,16 @@ h2 {
 
 h3 {
 
-  font-size:20px;
+  font-size:20px !important;
 
 }
 
 
 
-p {
+p,
+li {
 
-  font-size:16px;
+  font-size:16px !important;
 
   line-height:1.75;
 
@@ -495,17 +525,9 @@ p {
 
 
 
-.hero h1 {
-
-  font-size:36px;
-
-}
-
-
-
 .hero-text {
 
-  font-size:17px;
+  font-size:17px !important;
 
 }
 
@@ -543,11 +565,12 @@ p {
 .location-list span,
 .industry-list span {
 
-  padding:10px 16px;
-
   font-size:14px;
 
+  padding:10px 16px;
+
 }
+
 
 
 }
