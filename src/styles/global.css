@@ -2,299 +2,552 @@
    HYWSource Global Style
    =================================== */
 
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
-  margin: 0;
+
+  margin:0;
+
   font-family:
     Inter,
     "Helvetica Neue",
     Arial,
     sans-serif;
-  color: #111111;
-  background: #ffffff;
-  line-height: 1.6;
+
+  color:#111;
+
+  background:#fff;
+
+  line-height:1.6;
+
 }
+
 
 * {
-  box-sizing: border-box;
+
+  box-sizing:border-box;
+
 }
+
 
 a {
-  color: inherit;
-  text-decoration: none;
+
+  color:inherit;
+
+  text-decoration:none;
+
 }
+
 
 img {
-  max-width: 100%;
-  display: block;
+
+  max-width:100%;
+
+  display:block;
+
 }
 
 
-/* Layout */
+/* ===================================
+   Layout
+   =================================== */
+
+
+main {
+
+  width:100%;
+
+}
+
 
 section {
-  width: 100%;
+
+  width:100%;
+
 }
+
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 35px;
+
+  max-width:1200px;
+
+  margin:0 auto;
+
+  padding:0 35px;
+
 }
 
 
-/* Typography */
+
+/* ===================================
+   Typography
+   =================================== */
+
 
 h1,
 h2,
 h3,
 h4 {
-  margin: 0;
-  line-height: 1.2;
-  font-weight: 600;
+
+  margin:0;
+
+  line-height:1.25;
+
+  font-weight:600;
+
 }
+
+
+h1 {
+
+  font-size:52px;
+
+}
+
+
+h2 {
+
+  font-size:32px;
+
+}
+
+
+h3 {
+
+  font-size:22px;
+
+}
+
 
 p {
-  margin: 0;
+
+  font-size:18px;
+
+  line-height:1.8;
+
 }
 
 
-/* Buttons */
+
+/* ===================================
+   Buttons
+   =================================== */
+
 
 .btn {
-  display: inline-block;
-  padding: 14px 30px;
-  border-radius: 999px;
-  background: #111;
-  color: white;
-  transition: all .3s ease;
+
+  display:inline-block;
+
+  padding:14px 30px;
+
+  border-radius:999px;
+
+  background:#111;
+
+  color:white;
+
+  transition:.3s;
+
 }
+
 
 .btn:hover {
-  opacity: .8;
+
+  opacity:.8;
+
 }
 
 
-/* Hero */
+.btn-white {
+
+  display:inline-block;
+
+  margin-top:35px;
+
+  background:white;
+
+  color:#111;
+
+  padding:15px 32px;
+
+  border-radius:999px;
+
+}
+
+
+
+/* ===================================
+   Hero
+   =================================== */
+
 
 .hero {
-  padding: 100px 0 80px;
+
+  padding:100px 0 80px;
+
 }
+
 
 .hero h1 {
-  font-size: clamp(48px, 5vw, 64px);
-  max-width: 900px;
-  letter-spacing: -1px;
-}
 
-.hero p {
-  margin-top: 30px;
-  font-size: 20px;
-  color: #555;
-  max-width: 720px;
+  font-size:clamp(42px,5vw,64px);
+
+  max-width:950px;
+
+  letter-spacing:-1px;
+
 }
 
 
-/* Sections */
+.hero-text {
+
+  margin-top:30px;
+
+  font-size:20px;
+
+  color:#555;
+
+  max-width:750px;
+
+}
+
+
+
+/* ===================================
+   Sections
+   =================================== */
+
 
 .section {
-  padding: 90px 0;
+
+  padding:90px 0;
+
 }
+
 
 .section-title {
-  font-size: 42px;
-  margin-bottom: 50px;
+
+  font-size:42px;
+
+  margin-bottom:50px;
+
 }
 
 
-/* Cards */
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+/* ===================================
+   Cards
+   =================================== */
+
+
+.card-grid,
+.cards {
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:30px;
+
+  margin-top:40px;
+
 }
+
+
 
 .card {
-  border: 1px solid #e5e5e5;
-  padding: 32px;
-  border-radius: 16px;
-  background: white;
+
+  border:1px solid #e5e5e5;
+
+  padding:32px;
+
+  border-radius:16px;
+
+  background:white;
+
 }
+
+
 
 .card h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
 
-.card p {
-  color: #555;
-}
-
-
-/* Dark Section */
-
-.dark-section {
-  background: #111;
-  color: white;
-  border-radius: 24px;
-  padding: 70px;
-}
-
-
-/* Responsive */
-
-@media (max-width: 900px) {
-
-  .container {
-    padding: 0 20px;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section {
-    padding: 60px 0;
-  }
+  margin-bottom:15px;
 
 }
-/* ===============================
-   Homepage v3 additional styles
-   =============================== */
 
-
-.cards {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:30px;
-  margin-top:50px;
-}
-
-
-.card {
-  border:1px solid #e5e5e5;
-  padding:32px;
-  border-radius:18px;
-  background:#fff;
-}
 
 
 .card p {
+
   color:#555;
-  margin-top:15px;
-}
 
-
-.card-link {
-  transition:all .3s ease;
-}
-
-
-.card-link:hover {
-  transform:translateY(-5px);
 }
 
 
 
-.process {
+/* ===================================
+   Process
+   =================================== */
+
+
+.process,
+.process-grid {
+
   display:grid;
+
   grid-template-columns:repeat(4,1fr);
+
   gap:30px;
+
   margin-top:50px;
+
 }
 
 
 .process-item {
+
   border-top:1px solid #ddd;
+
   padding-top:25px;
+
 }
 
 
 .process-item span {
+
   font-size:14px;
+
   color:#777;
+
 }
 
 
 
+/* ===================================
+   Lists / Tags
+   =================================== */
+
+
+.location-list,
 .industry-list {
+
   display:flex;
+
   flex-wrap:wrap;
+
   gap:15px;
-  margin-top:40px;
+
+  margin-top:30px;
+
 }
 
 
+.location-list span,
 .industry-list span {
+
   border:1px solid #ddd;
+
   padding:12px 22px;
+
   border-radius:999px;
+
 }
 
 
 
+/* ===================================
+   Dark CTA
+   =================================== */
+
+
+.dark-section,
 .cta {
+
   background:#111;
+
   color:white;
-  padding:100px 0;
+
+  border-radius:24px;
+
+  padding:70px;
+
 }
 
 
+
+.dark-section h2,
 .cta h2 {
+
   color:white;
+
 }
 
 
+
+.dark-section p,
 .cta p {
+
   color:#ccc;
-  max-width:700px;
-  margin-top:25px;
+
 }
 
 
 
-.btn-white {
-  display:inline-block;
-  margin-top:35px;
-  background:white;
-  color:#111;
-  padding:15px 32px;
-  border-radius:999px;
-}
-
+/* ===================================
+   Tablet
+   =================================== */
 
 
 @media(max-width:900px){
 
-.cards,
-.process {
-grid-template-columns:1fr;
-}
+
+.container {
+
+  padding:0 20px;
 
 }
-/* About Page */
 
-.approach-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  margin-top: 45px;
-}
 
-.approach-grid .card {
-  min-height: 180px;
+.card-grid,
+.cards {
+
+  grid-template-columns:1fr;
+
 }
 
-.about-hero h1 {
-  max-width: 1000px;
+
+.process,
+.process-grid {
+
+  grid-template-columns:1fr;
+
 }
-.approach-grid .card {
-  min-height:180px;
+
+
+.section {
+
+  padding:60px 0;
+
 }
-.background-section {
-  padding-bottom: 40px;
+
+
+
+}
+
+
+
+
+/* ===================================
+   Mobile
+   =================================== */
+
+
+@media(max-width:600px){
+
+
+h1 {
+
+  font-size:34px;
+
+  line-height:1.25;
+
+}
+
+
+
+h2 {
+
+  font-size:25px;
+
+  line-height:1.4;
+
+}
+
+
+
+h3 {
+
+  font-size:20px;
+
+}
+
+
+
+p {
+
+  font-size:16px;
+
+  line-height:1.75;
+
+}
+
+
+
+.hero {
+
+  padding:55px 0 45px;
+
+}
+
+
+
+.hero h1 {
+
+  font-size:36px;
+
+}
+
+
+
+.hero-text {
+
+  font-size:17px;
+
+}
+
+
+
+.section {
+
+  padding:45px 0;
+
+}
+
+
+
+.card,
+.dark-section,
+.cta {
+
+  padding:25px;
+
+  border-radius:16px;
+
+}
+
+
+
+.card-grid,
+.cards {
+
+  gap:20px;
+
+}
+
+
+
+.location-list span,
+.industry-list span {
+
+  padding:10px 16px;
+
+  font-size:14px;
+
+}
+
+
 }
