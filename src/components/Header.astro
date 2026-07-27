@@ -7,104 +7,158 @@
       <span>| HYWSource</span>
     </a>
 
+
     <div class="links">
 
-     <a href="/">Home</a>
-     <a href="/about/">About</a>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
       <a href="/services/">Services</a>
-     <a href="/experience/">Experience</a>
-     <a href="/hywsource/">HYWSource</a>
-     <a href="/case-studies/">Case Studies</a>
-     <a href="/insights/">Insights</a>
-     <a href="/contact/">Contact</a>
+      <a href="/experience/">Experience</a>
+      <a href="/hywsource/">HYWSource</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/insights/">Insights</a>
+      <a href="/contact/">Contact</a>
 
     </div>
+
 
   </nav>
 
 </header>
 
+
 <style>
 
-header{
+header {
 
-width:100%;
-padding:28px 0;
-margin-bottom:70px;
-border-bottom:1px solid #efefef;
-
-}
-
-nav{
-
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
+  width:100%;
+  padding:28px 0;
+  margin-bottom:70px;
+  border-bottom:1px solid #efefef;
 
 }
 
-.logo{
 
-text-decoration:none;
-font-size:22px;
-color:#111;
+nav {
 
-}
-
-.logo strong{
-
-font-weight:700;
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 
 }
 
-.logo span{
 
-margin-left:8px;
-color:#777;
-font-weight:400;
+.logo {
 
-}
-
-.links{
-
-display:flex;
-gap:30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#111;
 
 }
 
-.links a{
 
-text-decoration:none;
-font-size:15px;
-color:#666;
-transition:.25s;
+.logo strong {
+
+  font-weight:700;
 
 }
 
-.links a:hover{
 
-color:#000;
+.logo span {
+
+  margin-left:8px;
+  color:#777;
+  font-weight:400;
 
 }
+
+
+.links {
+
+  display:flex;
+  gap:30px;
+
+}
+
+
+.links a {
+
+  text-decoration:none;
+  font-size:15px;
+  color:#666;
+  transition:.25s;
+
+}
+
+
+.links a:hover {
+
+  color:#000;
+
+}
+
+
+/* Tablet */
 
 @media(max-width:900px){
 
-nav{
+  nav {
 
-flex-direction:column;
-gap:20px;
+    flex-direction:column;
+    gap:20px;
+
+  }
+
+
+  .links {
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+  }
 
 }
 
-.links{
 
-flex-wrap:wrap;
-justify-content:center;
+
+/* Mobile */
+
+@media(max-width:768px){
+
+
+  header {
+
+    padding:20px 0;
+    margin-bottom:40px;
+
+  }
+
+
+  .logo {
+
+    font-size:20px;
+
+  }
+
+
+  .links {
+
+    gap:15px;
+
+  }
+
+
+  .links a {
+
+    font-size:14px;
+
+  }
+
 
 }
 
-}
+
 
 </style>
