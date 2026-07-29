@@ -644,47 +644,164 @@ body {
 Homepage Hero Image
 =================================== */
 
-.hero-grid{
+/* ===================================
+Homepage Hero
+=================================== */
 
-display:grid;
+.hero{
+    position:relative;
+    min-height:720px;
+    display:flex;
+    align-items:center;
 
-grid-template-columns:1.1fr 0.9fr;
-
-gap:60px;
-
-align-items:center;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.hero-image img{
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
 
-width:100%;
+.hero-content{
+    position:relative;
+    z-index:2;
+    color:#fff;
+    max-width:700px;
+}
 
-height:100%;
+.hero .eyebrow{
+    color:#ffffff;
+    opacity:.9;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+}
 
-object-fit:cover;
+.hero h1{
+    color:#fff;
+    font-size:clamp(52px,6vw,74px);
+    line-height:1.08;
+    margin:18px 0 28px;
+}
 
-border-radius:18px;
+.hero-text{
+    color:rgba(255,255,255,.95);
+    font-size:22px;
+    line-height:1.8;
+    max-width:620px;
+}
 
-box-shadow:0 20px 60px rgba(0,0,0,.15);
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
+.btn-outline-white{
+    color:#fff;
+    border:2px solid rgba(255,255,255,.7);
+    padding:14px 28px;
+    border-radius:999px;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.btn-outline-white:hover{
+    background:#fff;
+    color:#111;
 }
 
 @media(max-width:900px){
 
-.hero-grid{
+.hero{
+    min-height:620px;
+}
 
-grid-template-columns:1fr;
+.hero h1{
+    font-size:46px;
+}
 
-gap:35px;
+.hero-text{
+    font-size:18px;
+}
 
 }
 
-.hero-image{
+@media(max-width:600px){
 
-order:-1;
+.hero{
+    min-height:560px;
+}
 
+.hero h1{
+    font-size:38px;
+}
+
+.hero-text{
+    font-size:17px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+}
+/* ===================================
+Hero Feature Cards
+=================================== */
+
+.hero-features{
+    background:#fff;
+    margin-top:-1px;
+}
+
+.hero-features .container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+    padding:48px 0 60px;
+}
+
+.feature-item{
+    background:#fff;
+    border:1px solid #ececec;
+    border-radius:18px;
+    padding:30px;
+    transition:.3s;
+}
+
+.feature-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+}
+
+.feature-item h3{
+    font-size:22px;
+    margin-bottom:14px;
+}
+
+.feature-item p{
+    color:#666;
+    line-height:1.75;
+    margin:0;
+}
+
+@media(max-width:900px){
+
+.hero-features .container{
+    grid-template-columns:1fr 1fr;
 }
 
 }
 
+@media(max-width:600px){
+
+.hero-features .container{
+    grid-template-columns:1fr;
+}
+
+}
