@@ -827,35 +827,7 @@ Hero Feature Cards
    About Page
    =============================== */
 
-.about-hero{
 
-    min-height:auto;
-    height:auto;
-    display:block;
-
-    padding:40px 0 40px;
-
-}
-
-
-.about-hero .container{
-    max-width:1100px;
-}
-
-
-.about-hero h1{
-    max-width:900px;
-    margin-top:0;
-}
-
-
-@media(max-width:600px){
-
-.about-hero{
-    padding:30px 0;
-}
-
-}
 .about-intro{
 
     max-width:700px;
