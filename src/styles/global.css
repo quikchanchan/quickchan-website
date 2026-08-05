@@ -658,7 +658,15 @@ Homepage Hero
     background-position:center;
     background-repeat:no-repeat;
 }
+/* ===============================
+   About Page Hero Override
+   =============================== */
 
+
+
+.about-hero .container{
+    padding-top:0;
+}
 .hero-overlay{
     position:absolute;
     inset:0;
@@ -803,5 +811,56 @@ Hero Feature Cards
 .hero-features .container{
     grid-template-columns:1fr;
 }
+
+}
+
+
+
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+/* ===============================
+   About Page
+   =============================== */
+
+.about-hero{
+
+    min-height:auto;
+    height:auto;
+    display:block;
+
+    padding:40px 0 40px;
+
+}
+
+
+.about-hero .container{
+    max-width:1100px;
+}
+
+
+.about-hero h1{
+    max-width:900px;
+    margin-top:0;
+}
+
+
+@media(max-width:600px){
+
+.about-hero{
+    padding:30px 0;
+}
+
+}
+.about-intro{
+
+    max-width:700px;
+    font-size:20px;
+    line-height:1.8;
+    color:#555;
 
 }
