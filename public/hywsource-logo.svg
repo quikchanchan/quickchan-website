@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- 背景深蓝色圆角矩形 -->
+  <rect x="0" y="0" width="500" height="500" rx="90" ry="90" fill="#002169" />
+  
+  <!-- 白色文字 HYW -->
+  <text 
+    x="50%" 
+    y="52%" 
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+    font-weight="bold" 
+    font-size="160" 
+    fill="#FFFFFF" 
+    text-anchor="middle" 
+    dominant-baseline="central"
+    letter-spacing="2">HYW</text>
+</svg>
